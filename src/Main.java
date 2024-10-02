@@ -30,7 +30,7 @@ public class Main {
         try (Scanner scanner = new Scanner(new File(filePath))) {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
-                String[] parts = line.split(",");
+                String[] parts = line.split(", ");
                 int x = Integer.parseInt(parts[0]);
                 int y = Integer.parseInt(parts[1]);
                 SideWorld direction = SideWorld.valueOf(parts[2].toUpperCase());
